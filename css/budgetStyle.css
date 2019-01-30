@@ -1,0 +1,94 @@
+body, head, html {
+  margin:0px;
+  padding:0px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background-color:rgb(229, 223, 190);
+  height:1050px;
+}
+
+.navbar-brand {
+  color:#333333;
+  margin-top:.5em;
+}
+
+.navbar li {
+  padding:0px 30px 0px 30px;
+  font-size:18px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.navbar a {
+  color:#1d1e22;
+}
+
+.navbar a:hover {
+  color:#8c8c8c;
+  text-decoration:none;
+}
+
+.buttonHeader {
+  margin-top:30px;
+  position:relative;
+  width:8em;
+  background-color:#80AB03;
+  padding:10px;
+  border-radius:4px 4px 0px 0px;
+  border:none;
+  /* box-shadow: 3px 3px #b5b5b5; */
+  color:white;
+}
+
+.budgetQuestions {
+  padding:30px 0px 30px 40px;
+  background-color:#F8F9FA;
+  width:38%;
+  height:650px;
+  position:relative;
+  text-align:left;
+  border-radius:0px 4px 4px 4px;
+  box-sizing: border-box;
+  border:5px solid #ada0ae;
+}
+
+
+.budgetQuestions h4 {
+  font-weight:bold;
+  font-size:28px;
+  margin-bottom:35px;
+}
+
+.budgetQuestions label {
+  width:10em;
+  margin-right:20px;
+  font-size:14px;
+}
+
+.budgetQuestions input {
+  width:10em;
+  margin-bottom:10px;
+}
+
+.submitButton {
+  background-color:#84b000;
+  /* float:right; */
+  border:none;
+  width:10em;
+}
+
+.income {
+  position:absolute;
+  /* padding-top:30px; */
+  /* display:none; */
+}
+
+.expenses {
+  position:absolute;
+}
+
+.hidden {
+  display:none;
+}

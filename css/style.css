@@ -1,0 +1,182 @@
+
+body, head, html {
+  margin:0px;
+  padding:0px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar-brand {
+  color:#333333;
+  margin-top:.5em;
+}
+
+.navbar li {
+  padding:0px 30px 0px 30px;
+  font-size:18px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.navbar a {
+  color:#1d1e22;
+}
+
+.navbar a:hover {
+  color:#8c8c8c;
+  text-decoration:none;
+}
+
+.navbar .current {
+
+}
+
+/* Background image */
+#display-image {
+  min-height:24em;
+  /* max-height:700px; */
+  /* background-color: purple; */
+}
+
+#display-image h3 {
+  position:absolute;
+  color:white;
+  margin:220px 0px 0px 80px;
+  z-index: 1;
+  letter-spacing: 2px;
+  font-family: 'Indie Flower',cursive;
+}
+
+#display-image p {
+  position:absolute;
+  z-index:1;
+  font-size:15px;
+  margin:280px 0px 0px 80px;
+  text-align:left;
+  color:white;
+  width:88%;
+}
+
+#display-image button {
+  position:absolute;
+  z-index:1;
+  background-color:transparent;
+  color:white;
+  margin:375px 0px 0px 80px;
+  padding: 10px 40px 10px 40px;
+}
+
+#display-image button:hover {
+  background-color:white;
+  color:black;
+  font-weight:bold;
+}
+
+#display-image .extend-image {
+  min-height:844px;
+}
+
+#display-image img {
+    z-index:2;
+    filter:brightness(35%);
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+#display-image .regular-image {
+  height:422px;
+}
+
+/* Assets */
+#assets {
+  padding-top:490px;
+  color:white;
+  /* background-color:; */
+  padding-bottom:25px;
+}
+
+#assets h2 {
+  text-align:center;
+  margin-bottom:25px;
+  color:black;
+}
+
+#assets h3 {
+  text-align:center;
+  font-size:16.5px;
+  color:grey;
+  width:70%;
+  margin:auto;
+  margin-bottom:30px;
+}
+
+.value-point {
+  margin:30px 10px 20px 20px;
+  text-align:center;
+  display:inline-block;
+  width:30%;
+  color:grey;
+}
+
+.value-point p {
+  font-size:13px;
+}
+
+.value-point h4 {
+  font-size:16px;
+  font-weight:bold;
+  color:black;
+}
+
+.value-point img {
+  margin-bottom:10px;
+  width:24px;
+  height:24px;
+}
+
+/* Form */
+#reach-out {
+  background-color:#efefef;
+  padding-top:20px;
+  /* vertical-align:top; */
+}
+
+
+#reach-out h3 {
+  /* padding-top:20px; */
+  text-align:center;
+  width:60%;
+  margin:auto;
+  font-size:23px;
+  margin-bottom:20px;
+}
+
+#reach-out h4 {
+  margin-top:15px;
+  margin-bottom:3px;
+  font-size:18px;
+}
+
+#reach-out form {
+  display:inline;
+  /* float:left; */
+}
+
+#reach-out #contact-info {
+  display:inline;
+  /* float:left; */
+}
+
+#reach-out .normal-input {
+  width:30%;
+}
+
+#reach-out #message {
+  width:30%;
+}
+
+#reach-out button {
+  margin-top:10px;
+  display:block;
+  width:80px;
+}

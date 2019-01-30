@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="css/budgetStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+<nav class="navbar navbar-expand-sm bg-light">
+<div class="container-fluid">
+
+    <h1 class="navbar-brand">Xavier's Website</h1>
+
+    <ul class="nav navbar-nav">
+        <li class="current"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Projects</a></li>
+    </ul>
+</div>
+</nav>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <button type="button" class="buttonHeader" id="incomeButton">Income</button>
+    <button type="button" class="buttonHeader" id="expenseButton">Expenses</button>
+
+      <div class="budgetQuestions">
+        <!-- Questions about annual income  -->
+        <div class="income hidden" class="transparent">
+          <!-- <button type="button" id="incomeButtonHeader">Income</button> -->
+          <div class="form-group">
+            <label>Hourly Wage</label>
+            <input type="text" id="hourlyWage"></input>
+          </div>
+          <div class="form-group">
+            <label>Hours Worked Per Week</label>
+            <input type="text" id="weeklyHours"></input>
+          </div>
+          <div class="form-group">
+            <label>Salary</label>
+            <input type="number" id="salary"></input>
+          </div>
+          <div class="form-group">
+            <label>Additional Income</label>
+            <input type="number" id="additionalIncome"></input>
+          </div>
+
+            <button type="submit" class="btn btn-primary submitButton" id="submitIncome">Calculate income</button>
+
+          </div>
+
+        <!-- Questions about annual expenses -->
+        <div class="expenses" class="transparent">
+          <!-- <button type="button" id="expenseButtonHeader">Expenses</button> -->
+        <div class="form-group">
+          <label>Rent</label>
+          <input type="number" id="monthlyRent"></input>
+        </div>
+        <div class="form-group">
+          <label>Food</label>
+          <input type="number" id="monthlyFood"></input>
+        </div>
+        <div class="form-group">
+          <label>Utilities</label>
+          <input type="number" id="monthlyUtilities"></input>
+        </div>
+        <div class="form-group">
+          <label>Entertainment</label>
+          <input type="number" id="monthlyEntertainment"></input>
+        </div>
+        <div class="form-group">
+          <label>Transportation</label>
+          <input type="number" id="monthlyTransport"></input>
+        </div>
+        <div class="form-group">
+          <label>Other</label>
+          <input type="number" id="monthlyOther"></input>
+        </div>
+
+        <button type="submit" class="btn btn-primary submitButton" id="submitExpenses">Calculate expenses</button>
+
+        </div>
+
+      </div>
+    </div>
+
+</body>
+
+<script src=javascript/budget.js></script>
+
+</html>
