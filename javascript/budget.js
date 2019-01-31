@@ -2,15 +2,7 @@
 document.getElementById("submitIncome").addEventListener("click",computeMonthlyIncome);
 document.getElementById("submitExpenses").addEventListener("click",computeExpenses);
 document.getElementById("incomeButton").addEventListener("click",showIncome);
-document.getElementById("expenseButton").addEventListener("click",showExpenses);/*showIncome() {
-
-  var button = document.getElementById("income");
-
-  if (button.classList.contains(".hidden")) {
-    button.classList.remove(".hidden");
-  }
-
-});*/
+document.getElementById("expenseButton").addEventListener("click",showExpenses);
 
 function showIncome() {
 
@@ -22,6 +14,8 @@ function showIncome() {
   if (income.classList.contains("hidden")) {
     income.classList.remove("hidden");
     expense.classList.add("hidden");
+    document.getElementById("incomeButton").style.backgroundColor = "rgb(128, 171, 3)";
+    document.getElementById("expenseButton").style.backgroundColor = "rgb(128, 171, 3, 0.6)";
   }
 }
 
@@ -33,6 +27,8 @@ function showExpenses() {
   if (expense.classList.contains("hidden")) {
     expense.classList.remove("hidden");
     income.classList.add("hidden");
+    document.getElementById("expenseButton").style.backgroundColor = "rgb(128, 171, 3)";
+    document.getElementById("incomeButton").style.backgroundColor = "rgb(128, 171, 3, 0.6)";
   }
 
 }
@@ -41,8 +37,6 @@ function computeMonthlyIncome() {
 
   var monthlyIncome;
   var salary = parseFloat(document.getElementById("salary").value);
-
-  // console.log("Parse Float: " + parseFloat(document.getElementById("salary").value));
 
   if (isNaN(salary)) {
     salary = (parseFloat(document.getElementById("hourlyWage").value) *
@@ -71,8 +65,9 @@ function computeExpenses() {
   for (var i = 0; i < expenses.length; i++) {
     if (!isNaN(parseFloat(expenses[i].value))) {
       totalExpenses += parseFloat(expenses[i].value);
-      console.log("Total Expenses in loop: " + totalExpenses);
     }
   }
+
+  console.log(totalExpenses);
 
 }

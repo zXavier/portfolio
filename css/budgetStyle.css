@@ -30,30 +30,32 @@ body {
   text-decoration:none;
 }
 
+.budgetContainer {
+  margin-left:110px;
+  margin-right:100px;
+  width:35%;
+  float:left;
+}
+
 .buttonHeader {
   margin-top:30px;
-  position:relative;
   width:8em;
-  background-color:#80AB03;
+  background-color:rgb(128, 171, 3, 0.6);
   padding:10px;
   border-radius:4px 4px 0px 0px;
   border:none;
-  /* box-shadow: 3px 3px #b5b5b5; */
   color:white;
 }
 
 .budgetQuestions {
   padding:30px 0px 30px 40px;
   background-color:#F8F9FA;
-  width:38%;
-  height:650px;
-  position:relative;
+  height:450px;
   text-align:left;
   border-radius:0px 4px 4px 4px;
-  box-sizing: border-box;
+  box-sizing:border-box;
   border:5px solid #ada0ae;
 }
-
 
 .budgetQuestions h4 {
   font-weight:bold;
@@ -74,21 +76,27 @@ body {
 
 .submitButton {
   background-color:#84b000;
-  /* float:right; */
   border:none;
   width:10em;
 }
 
-.income {
-  position:absolute;
-  /* padding-top:30px; */
-  /* display:none; */
-}
-
-.expenses {
-  position:absolute;
-}
-
 .hidden {
   display:none;
+}
+
+#incomeButton {
+  background-color:rgb(128, 171, 3);
+}
+
+.buttonHeader:focus {
+  outline:none;
+}
+
+
+#incomeBreakdown {
+  display:inline-block;
+  width:40%;
+  float:left;
+  margin-top:65px;
+
 }
